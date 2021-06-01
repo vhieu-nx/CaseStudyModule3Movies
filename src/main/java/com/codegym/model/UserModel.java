@@ -1,5 +1,5 @@
 package com.codegym.model;
-
+//Model
 public class UserModel {
     private  int id;
     private String username;
