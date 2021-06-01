@@ -1,6 +1,7 @@
 package com.codegym.dao.impl;
 
 import com.codegym.dao.MovieDao;
+import com.codegym.dao.query.MovieQuery;
 import com.codegym.exception.DaoException;
 import com.codegym.model.MovieModel;
 import com.codegym.pool.DynamicConnectionPoll;
@@ -27,7 +28,7 @@ public class MovieDAOImpl implements MovieDao {
         ResultSet resultSet = null;
         String query = "";
         connection = DynamicConnectionPoll.getInstance().provideConnection();
-//        query = DaoUtil.createQueryWithCriteria(MO)
+        query = DaoUtil.createQueryWithCriteria(MovieQuery.FIND_ALL_MOVIE,criteria);
         return null;
     }
 
